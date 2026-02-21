@@ -1,0 +1,17 @@
+D:\_git\Levenshtein-distance\Lab_3\bin\Debug\net10.0-windows\Lab_3.exe
+D:\_git\Levenshtein-distance\Lab_3\bin\Debug\net10.0-windows\Lab_3.deps.json
+D:\_git\Levenshtein-distance\Lab_3\bin\Debug\net10.0-windows\Lab_3.runtimeconfig.json
+D:\_git\Levenshtein-distance\Lab_3\bin\Debug\net10.0-windows\Lab_3.dll
+D:\_git\Levenshtein-distance\Lab_3\bin\Debug\net10.0-windows\Lab_3.pdb
+D:\_git\Levenshtein-distance\Lab_3\obj\Debug\net10.0-windows\Lab_3.Form1.resources
+D:\_git\Levenshtein-distance\Lab_3\obj\Debug\net10.0-windows\Lab_3.csproj.GenerateResource.cache
+D:\_git\Levenshtein-distance\Lab_3\obj\Debug\net10.0-windows\Lab_3.GeneratedMSBuildEditorConfig.editorconfig
+D:\_git\Levenshtein-distance\Lab_3\obj\Debug\net10.0-windows\Lab_3.AssemblyInfoInputs.cache
+D:\_git\Levenshtein-distance\Lab_3\obj\Debug\net10.0-windows\Lab_3.AssemblyInfo.cs
+D:\_git\Levenshtein-distance\Lab_3\obj\Debug\net10.0-windows\Lab_3.csproj.CoreCompileInputs.cache
+D:\_git\Levenshtein-distance\Lab_3\obj\Debug\net10.0-windows\Lab_3.sourcelink.json
+D:\_git\Levenshtein-distance\Lab_3\obj\Debug\net10.0-windows\Lab_3.dll
+D:\_git\Levenshtein-distance\Lab_3\obj\Debug\net10.0-windows\refint\Lab_3.dll
+D:\_git\Levenshtein-distance\Lab_3\obj\Debug\net10.0-windows\Lab_3.pdb
+D:\_git\Levenshtein-distance\Lab_3\obj\Debug\net10.0-windows\Lab_3.genruntimeconfig.cache
+D:\_git\Levenshtein-distance\Lab_3\obj\Debug\net10.0-windows\ref\Lab_3.dll
