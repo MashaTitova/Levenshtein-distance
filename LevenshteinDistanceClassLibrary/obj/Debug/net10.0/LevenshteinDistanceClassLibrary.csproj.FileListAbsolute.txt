@@ -1,0 +1,12 @@
+D:\_git\Levenshtein-distance\LevenshteinDistanceClassLibrary\bin\Debug\net10.0\LevenshteinDistanceClassLibrary.deps.json
+D:\_git\Levenshtein-distance\LevenshteinDistanceClassLibrary\bin\Debug\net10.0\LevenshteinDistanceClassLibrary.dll
+D:\_git\Levenshtein-distance\LevenshteinDistanceClassLibrary\bin\Debug\net10.0\LevenshteinDistanceClassLibrary.pdb
+D:\_git\Levenshtein-distance\LevenshteinDistanceClassLibrary\obj\Debug\net10.0\LevenshteinDistanceClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\_git\Levenshtein-distance\LevenshteinDistanceClassLibrary\obj\Debug\net10.0\LevenshteinDistanceClassLibrary.AssemblyInfoInputs.cache
+D:\_git\Levenshtein-distance\LevenshteinDistanceClassLibrary\obj\Debug\net10.0\LevenshteinDistanceClassLibrary.AssemblyInfo.cs
+D:\_git\Levenshtein-distance\LevenshteinDistanceClassLibrary\obj\Debug\net10.0\LevenshteinDistanceClassLibrary.csproj.CoreCompileInputs.cache
+D:\_git\Levenshtein-distance\LevenshteinDistanceClassLibrary\obj\Debug\net10.0\LevenshteinDistanceClassLibrary.sourcelink.json
+D:\_git\Levenshtein-distance\LevenshteinDistanceClassLibrary\obj\Debug\net10.0\LevenshteinDistanceClassLibrary.dll
+D:\_git\Levenshtein-distance\LevenshteinDistanceClassLibrary\obj\Debug\net10.0\refint\LevenshteinDistanceClassLibrary.dll
+D:\_git\Levenshtein-distance\LevenshteinDistanceClassLibrary\obj\Debug\net10.0\LevenshteinDistanceClassLibrary.pdb
+D:\_git\Levenshtein-distance\LevenshteinDistanceClassLibrary\obj\Debug\net10.0\ref\LevenshteinDistanceClassLibrary.dll

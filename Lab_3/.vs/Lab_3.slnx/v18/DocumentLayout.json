@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\_git\\Levenshtein-distance\\Lab_3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D47B0B07-F1BC-ABEE-9872-74CF8CCB398C}|Lab_3.csproj|d:\\_git\\levenshtein-distance\\lab_3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D47B0B07-F1BC-ABEE-9872-74CF8CCB398C}|Lab_3.csproj|D:\\_git\\Levenshtein-distance\\Lab_3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D47B0B07-F1BC-ABEE-9872-74CF8CCB398C}|Lab_3.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D47B0B07-F1BC-ABEE-9872-74CF8CCB398C}|Lab_3.csproj|d:\\_git\\levenshtein-distance\\lab_3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D47B0B07-F1BC-ABEE-9872-74CF8CCB398C}|Lab_3.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47B0B07-F1BC-ABEE-9872-74CF8CCB398C}|Lab_3.csproj|d:\\_git\\levenshtein-distance\\lab_3\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D47B0B07-F1BC-ABEE-9872-74CF8CCB398C}|Lab_3.csproj|solutionrelative:class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47B0B07-F1BC-ABEE-9872-74CF8CCB398C}|Lab_3.csproj|d:\\_git\\levenshtein-distance\\lab_3\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D47B0B07-F1BC-ABEE-9872-74CF8CCB398C}|Lab_3.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47B0B07-F1BC-ABEE-9872-74CF8CCB398C}|Lab_3.csproj|d:\\_git\\levenshtein-distance\\lab_3\\measureclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D47B0B07-F1BC-ABEE-9872-74CF8CCB398C}|Lab_3.csproj|solutionrelative:measureclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
@@ -32,9 +48,48 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\_git\\Levenshtein-distance\\Lab_3\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAuwEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T14:39:20.759Z",
+              "WhenOpened": "2026-02-22T20:34:12.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MeasureClass.cs",
+              "DocumentMoniker": "D:\\_git\\Levenshtein-distance\\Lab_3\\MeasureClass.cs",
+              "RelativeDocumentMoniker": "MeasureClass.cs",
+              "ToolTip": "D:\\_git\\Levenshtein-distance\\Lab_3\\MeasureClass.cs",
+              "RelativeToolTip": "MeasureClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T18:32:19.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\_git\\Levenshtein-distance\\Lab_3\\Class1.cs",
+              "RelativeDocumentMoniker": "Class1.cs",
+              "ToolTip": "D:\\_git\\Levenshtein-distance\\Lab_3\\Class1.cs",
+              "RelativeToolTip": "Class1.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T15:12:46.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\_git\\Levenshtein-distance\\Lab_3\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "D:\\_git\\Levenshtein-distance\\Lab_3\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T12:03:04.753Z",
               "EditorCaption": ""
             },
             {
