@@ -61,7 +61,7 @@
             Time = new DataGridViewTextBoxColumn();
             OperationNumbers = new DataGridViewTextBoxColumn();
             Show_button = new Button();
-            InfcComparison_button = new Button();
+            InfComparison_button = new Button();
             CleanInput_button = new Button();
             LevenshteinDistance_tabControl.SuspendLayout();
             RecursiveMethod_tabPage.SuspendLayout();
@@ -103,6 +103,7 @@
             Inf_button.TabIndex = 5;
             Inf_button.Text = "Справка";
             Inf_button.UseVisualStyleBackColor = false;
+            Inf_button.Click += Information;
             // 
             // LevenshteinDistance_tabControl
             // 
@@ -202,6 +203,7 @@
             InfRecursive_button.TabIndex = 10;
             InfRecursive_button.Text = "Справка";
             InfRecursive_button.UseVisualStyleBackColor = false;
+            InfRecursive_button.Click += Information;
             // 
             // LevenshteinDistanceRecursive_textBox
             // 
@@ -326,6 +328,7 @@
             InfDynamicProgramming_button.TabIndex = 18;
             InfDynamicProgramming_button.Text = "Справка";
             InfDynamicProgramming_button.UseVisualStyleBackColor = false;
+            InfDynamicProgramming_button.Click += Information;
             // 
             // LevenshteinDistanceDynamic_textBox
             // 
@@ -368,7 +371,7 @@
             MethodСomparison_tabPage.Controls.Add(ComparisonClear_button);
             MethodСomparison_tabPage.Controls.Add(Comparison_dataGridView);
             MethodСomparison_tabPage.Controls.Add(Show_button);
-            MethodСomparison_tabPage.Controls.Add(InfcComparison_button);
+            MethodСomparison_tabPage.Controls.Add(InfComparison_button);
             MethodСomparison_tabPage.ForeColor = Color.DarkRed;
             MethodСomparison_tabPage.Location = new Point(8, 46);
             MethodСomparison_tabPage.Name = "MethodСomparison_tabPage";
@@ -443,16 +446,17 @@
             Show_button.UseVisualStyleBackColor = false;
             Show_button.Click += Comparison;
             // 
-            // InfcComparison_button
+            // InfComparison_button
             // 
-            InfcComparison_button.BackColor = Color.Snow;
-            InfcComparison_button.ForeColor = Color.DarkRed;
-            InfcComparison_button.Location = new Point(914, 448);
-            InfcComparison_button.Name = "InfcComparison_button";
-            InfcComparison_button.Size = new Size(150, 46);
-            InfcComparison_button.TabIndex = 11;
-            InfcComparison_button.Text = "Справка";
-            InfcComparison_button.UseVisualStyleBackColor = false;
+            InfComparison_button.BackColor = Color.Snow;
+            InfComparison_button.ForeColor = Color.DarkRed;
+            InfComparison_button.Location = new Point(914, 448);
+            InfComparison_button.Name = "InfComparison_button";
+            InfComparison_button.Size = new Size(150, 46);
+            InfComparison_button.TabIndex = 11;
+            InfComparison_button.Text = "Справка";
+            InfComparison_button.UseVisualStyleBackColor = false;
+            InfComparison_button.Click += Information;
             // 
             // CleanInput_button
             // 
@@ -517,7 +521,7 @@
         private Label OperationNumbersDymanic_label;
         private TextBox TimeDynamic_textBox;
         private Label TimeDynamic_label;
-        private Button InfcComparison_button;
+        private Button InfComparison_button;
         private Button Show_button;
         private DataGridView Comparison_dataGridView;
         private DataGridViewTextBoxColumn Method;
