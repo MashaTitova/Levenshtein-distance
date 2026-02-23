@@ -54,18 +54,20 @@
             LevenshteinDistanceDynamic_label = new Label();
             DynamicProgramming_label = new Label();
             MethodСomparison_tabPage = new TabPage();
-            dataGridView1 = new DataGridView();
+            ComparisonClear_button = new Button();
+            Comparison_dataGridView = new DataGridView();
             Method = new DataGridViewTextBoxColumn();
             Distance = new DataGridViewTextBoxColumn();
             Time = new DataGridViewTextBoxColumn();
             OperationNumbers = new DataGridViewTextBoxColumn();
             Show_button = new Button();
             InfcComparison_button = new Button();
+            CleanInput_button = new Button();
             LevenshteinDistance_tabControl.SuspendLayout();
             RecursiveMethod_tabPage.SuspendLayout();
             DynamicProgramming_tabPage.SuspendLayout();
             MethodСomparison_tabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Comparison_dataGridView).BeginInit();
             SuspendLayout();
             // 
             // FirstString_textBox
@@ -194,7 +196,7 @@
             // 
             InfRecursive_button.BackColor = Color.Snow;
             InfRecursive_button.ForeColor = Color.DarkRed;
-            InfRecursive_button.Location = new Point(896, 6);
+            InfRecursive_button.Location = new Point(917, 448);
             InfRecursive_button.Name = "InfRecursive_button";
             InfRecursive_button.Size = new Size(150, 46);
             InfRecursive_button.TabIndex = 10;
@@ -318,7 +320,7 @@
             // 
             InfDynamicProgramming_button.BackColor = Color.Snow;
             InfDynamicProgramming_button.ForeColor = Color.DarkRed;
-            InfDynamicProgramming_button.Location = new Point(896, 6);
+            InfDynamicProgramming_button.Location = new Point(914, 448);
             InfDynamicProgramming_button.Name = "InfDynamicProgramming_button";
             InfDynamicProgramming_button.Size = new Size(150, 46);
             InfDynamicProgramming_button.TabIndex = 18;
@@ -363,7 +365,8 @@
             // MethodСomparison_tabPage
             // 
             MethodСomparison_tabPage.BackColor = Color.WhiteSmoke;
-            MethodСomparison_tabPage.Controls.Add(dataGridView1);
+            MethodСomparison_tabPage.Controls.Add(ComparisonClear_button);
+            MethodСomparison_tabPage.Controls.Add(Comparison_dataGridView);
             MethodСomparison_tabPage.Controls.Add(Show_button);
             MethodСomparison_tabPage.Controls.Add(InfcComparison_button);
             MethodСomparison_tabPage.ForeColor = Color.DarkRed;
@@ -374,15 +377,27 @@
             MethodСomparison_tabPage.TabIndex = 2;
             MethodСomparison_tabPage.Text = "Сравнение методов";
             // 
-            // dataGridView1
+            // ComparisonClear_button
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Method, Distance, Time, OperationNumbers });
-            dataGridView1.Location = new Point(42, 25);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 82;
-            dataGridView1.Size = new Size(885, 368);
-            dataGridView1.TabIndex = 9;
+            ComparisonClear_button.BackColor = Color.Snow;
+            ComparisonClear_button.ForeColor = Color.DarkRed;
+            ComparisonClear_button.Location = new Point(285, 414);
+            ComparisonClear_button.Name = "ComparisonClear_button";
+            ComparisonClear_button.Size = new Size(192, 66);
+            ComparisonClear_button.TabIndex = 25;
+            ComparisonClear_button.Text = "Очистить";
+            ComparisonClear_button.UseVisualStyleBackColor = false;
+            ComparisonClear_button.Click += Comparison;
+            // 
+            // Comparison_dataGridView
+            // 
+            Comparison_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Comparison_dataGridView.Columns.AddRange(new DataGridViewColumn[] { Method, Distance, Time, OperationNumbers });
+            Comparison_dataGridView.Location = new Point(42, 25);
+            Comparison_dataGridView.Name = "Comparison_dataGridView";
+            Comparison_dataGridView.RowHeadersWidth = 82;
+            Comparison_dataGridView.Size = new Size(885, 368);
+            Comparison_dataGridView.TabIndex = 9;
             // 
             // Method
             // 
@@ -420,7 +435,7 @@
             // 
             Show_button.BackColor = Color.Snow;
             Show_button.ForeColor = Color.DarkRed;
-            Show_button.Location = new Point(820, 413);
+            Show_button.Location = new Point(42, 414);
             Show_button.Name = "Show_button";
             Show_button.Size = new Size(192, 66);
             Show_button.TabIndex = 24;
@@ -432,12 +447,24 @@
             // 
             InfcComparison_button.BackColor = Color.Snow;
             InfcComparison_button.ForeColor = Color.DarkRed;
-            InfcComparison_button.Location = new Point(6, 448);
+            InfcComparison_button.Location = new Point(914, 448);
             InfcComparison_button.Name = "InfcComparison_button";
             InfcComparison_button.Size = new Size(150, 46);
             InfcComparison_button.TabIndex = 11;
             InfcComparison_button.Text = "Справка";
             InfcComparison_button.UseVisualStyleBackColor = false;
+            // 
+            // CleanInput_button
+            // 
+            CleanInput_button.BackColor = Color.Snow;
+            CleanInput_button.ForeColor = Color.DarkRed;
+            CleanInput_button.Location = new Point(823, 131);
+            CleanInput_button.Name = "CleanInput_button";
+            CleanInput_button.Size = new Size(192, 66);
+            CleanInput_button.TabIndex = 16;
+            CleanInput_button.Text = "Очистить";
+            CleanInput_button.UseVisualStyleBackColor = false;
+            CleanInput_button.Click += Clean_Input;
             // 
             // LevenshteinDistance_Form
             // 
@@ -445,6 +472,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1304, 872);
+            Controls.Add(CleanInput_button);
             Controls.Add(LevenshteinDistance_tabControl);
             Controls.Add(Inf_button);
             Controls.Add(SecondString_textBox);
@@ -457,7 +485,7 @@
             DynamicProgramming_tabPage.ResumeLayout(false);
             DynamicProgramming_tabPage.PerformLayout();
             MethodСomparison_tabPage.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Comparison_dataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -491,10 +519,12 @@
         private Label TimeDynamic_label;
         private Button InfcComparison_button;
         private Button Show_button;
-        private DataGridView dataGridView1;
+        private DataGridView Comparison_dataGridView;
         private DataGridViewTextBoxColumn Method;
         private DataGridViewTextBoxColumn Distance;
         private DataGridViewTextBoxColumn Time;
         private DataGridViewTextBoxColumn OperationNumbers;
+        private Button CleanInput_button;
+        private Button ComparisonClear_button;
     }
 }

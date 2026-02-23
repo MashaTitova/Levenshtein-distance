@@ -3,7 +3,7 @@ namespace LevenshteinDistanceClassLibrary
 {
     public class LevenshteinDistance
     {
-        private static int OperationRecursionCount = 0;
+        private static long OperationRecursionCount = 0;
         // Рекурсивная функция для вычисления расстояния Левенштейна
         public static int CalculateDistance(string str1, string str2)
         {
@@ -11,7 +11,7 @@ namespace LevenshteinDistanceClassLibrary
             return CalculateDistanceRecursion(str1, str2);
             
         }
-        public static int GetOperationCount()
+        public static long GetOperationCount()
         {
             return OperationRecursionCount;
         }
@@ -50,9 +50,9 @@ namespace LevenshteinDistanceClassLibrary
 
 
         }
-        public static (int dis, int operations) CalculateDistanceDynamic(string str1, string str2)
+        public static (int dis, long operations) CalculateDistanceDynamic(string str1, string str2)
         {
-            int operations = 0;
+            long operations = 0;
             int m = str1.Length;
             int n = str2.Length;
             operations += 2;
