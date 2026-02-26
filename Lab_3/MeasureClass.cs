@@ -21,7 +21,7 @@ namespace MeasureClassLibrary
         ///<returns>
         ///Время работы алгоритма
         ///</returns>
-        public static Stopwatch MeasureAlgorithm(string algorithmName, Action action)
+        public static Stopwatch MeasureAlgorithm(Action action)
         {
             Stopwatch stopwatch = new Stopwatch();
 

@@ -1,0 +1,12 @@
+D:\_git\Levenshtein-distance\MeasureClassLibrary\bin\Debug\net10.0\MeasureClassLibrary.deps.json
+D:\_git\Levenshtein-distance\MeasureClassLibrary\bin\Debug\net10.0\MeasureClassLibrary.dll
+D:\_git\Levenshtein-distance\MeasureClassLibrary\bin\Debug\net10.0\MeasureClassLibrary.pdb
+D:\_git\Levenshtein-distance\MeasureClassLibrary\obj\Debug\net10.0\MeasureClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\_git\Levenshtein-distance\MeasureClassLibrary\obj\Debug\net10.0\MeasureClassLibrary.AssemblyInfoInputs.cache
+D:\_git\Levenshtein-distance\MeasureClassLibrary\obj\Debug\net10.0\MeasureClassLibrary.AssemblyInfo.cs
+D:\_git\Levenshtein-distance\MeasureClassLibrary\obj\Debug\net10.0\MeasureClassLibrary.csproj.CoreCompileInputs.cache
+D:\_git\Levenshtein-distance\MeasureClassLibrary\obj\Debug\net10.0\MeasureClassLibrary.sourcelink.json
+D:\_git\Levenshtein-distance\MeasureClassLibrary\obj\Debug\net10.0\MeasureClassLibrary.dll
+D:\_git\Levenshtein-distance\MeasureClassLibrary\obj\Debug\net10.0\refint\MeasureClassLibrary.dll
+D:\_git\Levenshtein-distance\MeasureClassLibrary\obj\Debug\net10.0\MeasureClassLibrary.pdb
+D:\_git\Levenshtein-distance\MeasureClassLibrary\obj\Debug\net10.0\ref\MeasureClassLibrary.dll

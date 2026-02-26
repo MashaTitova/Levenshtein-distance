@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="../LevenshteinDistanceClassLibrary/LevenshteinDistanceClassLibrary.csproj" Id="f7e19b91-ed4c-480b-b71d-7db5ba602e94" />
   <Project Path="../MeasureClassLibrary/MeasureClassLibrary.csproj" Id="fe7dae6b-c1e1-422a-a520-14a4a2215580" />
+  <Project Path="../TestProject1/TestProject1.csproj" Id="04c045d1-900d-45ec-8aef-b462eac4460d" />
   <Project Path="Lab_3.csproj" />
 </Solution>

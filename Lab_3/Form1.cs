@@ -75,14 +75,14 @@ namespace Lab_3
                 if(RecursiveMethod_button.Text == "Рассчитать")
                 {
                     //Вывод расстояния Левенштейна
-                    LevenshteinDistanceRecursive_textBox.Text = Convert.ToString(LevenshteinDistance.CalculateDistanceRecursion(FirstString_textBox.Text, SecondString_textBox.Text));
+                    LevenshteinDistanceRecursive_textBox.Text = Convert.ToString(LevenshteinDistance.GetDistanseRecursion(FirstString_textBox.Text, SecondString_textBox.Text));
                     //Вывод времени выполнения алгоритма
-                    TimeRecursive_textBox.Text = Convert.ToString(PerformanceMeasurement.MeasureAlgorithm("Базовый алгоритм", () =>
+                    TimeRecursive_textBox.Text = Convert.ToString(PerformanceMeasurement.MeasureAlgorithm(() =>
                     {
-                        LevenshteinDistance.CalculateDistanceRecursion(FirstString_textBox.Text, SecondString_textBox.Text);
+                        LevenshteinDistance.GetDistanseRecursion(FirstString_textBox.Text, SecondString_textBox.Text);
                     }).Elapsed.TotalMilliseconds * 1000) + " мкс";
                     //Вывод количества элементарных операций
-                    OperationNumbersRecursion_textBox.Text = Convert.ToString(LevenshteinDistance.GetOperationCount());
+                    OperationNumbersRecursion_textBox.Text = Convert.ToString(LevenshteinDistance.GetOperationRecursionCount());
                     //Добавление данных в список
                     comparison_mass.Add(["Рекурсивный", LevenshteinDistanceRecursive_textBox.Text, TimeRecursive_textBox.Text, OperationNumbersRecursion_textBox.Text,]);
                     new_input = true;
@@ -107,17 +107,16 @@ namespace Lab_3
             {
                 if(DynamicProgramming_button.Text == "Рассчитать")
                 {
-                    (int dis, int operations) = LevenshteinDistance.CalculateDistanceDynamic(FirstString_textBox.Text, SecondString_textBox.Text);
                     //Вывод расстояния Левенштейна
-                    LevenshteinDistanceDynamic_textBox.Text = Convert.ToString(dis);
+                    LevenshteinDistanceDynamic_textBox.Text = Convert.ToString(LevenshteinDistance.CalculateDistanceDynamic(FirstString_textBox.Text, SecondString_textBox.Text));
                     //Вывод времени выполнения алгоритма
                     TimeDynamic_textBox.Text = Convert.ToString(
-                        PerformanceMeasurement.MeasureAlgorithm("Базовый алгоритм", () =>
+                        PerformanceMeasurement.MeasureAlgorithm(() =>
                         {
                             LevenshteinDistance.CalculateDistanceDynamic(FirstString_textBox.Text, SecondString_textBox.Text);
                         }).Elapsed.TotalMilliseconds * 1000) + "мкс";
                     //Вывод количества элементарных операций
-                    OperationNumbersDymanic_textBox.Text = Convert.ToString(operations);
+                    OperationNumbersDymanic_textBox.Text = Convert.ToString(LevenshteinDistance.GetOperationDynamicCount());
                     //Добавление данных в список
                     comparison_mass.Add(["Динам. программ.", LevenshteinDistanceDynamic_textBox.Text, TimeDynamic_textBox.Text, OperationNumbersDymanic_textBox.Text]);
                     new_input = true;
