@@ -1,5 +1,4 @@
 ﻿
-using System.Windows.Forms.VisualStyles;
 
 namespace LevenshteinDistanceClassLibrary
 {
@@ -26,6 +25,8 @@ namespace LevenshteinDistanceClassLibrary
         //Объявление переменной для подсчета количества элементарных операций для рекурсивного метода
         private static int OperationRecursionCount = 0;
         private static int OperationDynamicCount = 0;
+        private static HashSet<string> show_parts_recursion = new HashSet<string>();
+        private static int[,] show_parts_dynamic = new int[0, 0];
         // Рекурсивная функция для вычисления расстояния Левенштейна  
 
         /// <summary>
@@ -40,7 +41,37 @@ namespace LevenshteinDistanceClassLibrary
             OperationRecursionCount = 0;
             return tmp;
         }
+        /// <summary>
+        /// Вывод поэтапного преобразования строк для рекурсивного метода
+        /// </summary>
+        /// <returns>
+        /// Поэтапное преобразования строк для рекурсивного метода
+        /// </returns>
+        public static HashSet<string> GetPartsRecursion()
+        {
 
+            // Создаем новую коллекцию для хранения результатов
+            HashSet<string> tmp = new HashSet<string>();
+
+            // Копируем элементы из show_parts_recursion в tmp
+            foreach (var item in show_parts_recursion)
+            {
+                tmp.Add(item);
+            }
+
+            // Очищаем исходную коллекцию
+            show_parts_recursion.Clear();
+            return tmp;
+
+        }
+        /// <summary>
+        /// Вывод расстояние Левенштейна между двумя строками рекурсивным методом
+        /// </summary>
+        /// <param name="str1">Первая строка</param>
+        /// <param name="str2">Вторая строка</param>
+        /// <returns>
+        /// вывод расстояния Левенштейна между двумя строками
+        /// </returns>
         public static int GetDistanseRecursion(string str1, string str2)
         {
             int res = CalculateDistanceRecursion(str1, str2);
@@ -74,7 +105,6 @@ namespace LevenshteinDistanceClassLibrary
             // Базовый случай: если вторая строка пустая
             if (str2.Length == 0)
             {
-
                 OperationRecursionCount += 4;
                 return str1.Length;
             }
@@ -95,7 +125,9 @@ namespace LevenshteinDistanceClassLibrary
                        CalculateDistanceRecursion(str1, str2.Substring(0, str2.Length - 1))),
                    CalculateDistanceRecursion(str1.Substring(0, str1.Length - 1), str2.Substring(0, str2.Length - 1)));
             }
+
             OperationRecursionCount += 8;
+            show_parts_recursion.Add($"{str1}, {str2}");
             cache[(str1, str2)] = result;
             return result;
         }
@@ -111,7 +143,32 @@ namespace LevenshteinDistanceClassLibrary
             OperationDynamicCount = 0;
             return tmp;
         }
+        /// <summary>
+        /// Вывод поэтапного преобразования строк для рекурсивного метода
+        /// </summary>
+        /// <returns>
+        /// Поэтапное преобразования строк для рекурсивного метода
+        /// </returns>
+        public static int[,] GetPartsDynamic()
+        {
 
+            // Создаем новую матрицу того же размера
+            int[,] tmp = new int[show_parts_dynamic.GetLength(0), show_parts_dynamic.GetLength(1)];
+
+            // Копируем значения из исходной матрицы
+            for (int i = 0; i < show_parts_dynamic.GetLength(0); i++)
+            {
+                for (int j = 0; j < show_parts_dynamic.GetLength(1); j++)
+                {
+                    tmp[i, j] = show_parts_dynamic[i, j];
+                }
+            }
+
+            // Очищаем исходную матрицу
+            Array.Clear(show_parts_dynamic, 0, show_parts_dynamic.Length);
+
+            return tmp;
+        }
         /// <summary>
         /// Вычисление расстояния Левенштейна между двумя строками методом динамического программирования
         /// </summary>
@@ -168,10 +225,12 @@ namespace LevenshteinDistanceClassLibrary
                         );
                         OperationDynamicCount += 18;
                     }
+                    
 
                 }
             }
-
+            
+            show_parts_dynamic = distance;
             // Результат находится в правом нижнем углу матрицы
             OperationDynamicCount += 7;
             return distance[m, n];

@@ -34,6 +34,7 @@
             Inf_button = new Button();
             LevenshteinDistance_tabControl = new TabControl();
             RecursiveMethod_tabPage = new TabPage();
+            ShowPartsRecursion_button = new Button();
             RecursiveMethod_button = new Button();
             OperationNumbersRecursion_textBox = new TextBox();
             OperationNumbersRecursion_label = new Label();
@@ -44,6 +45,7 @@
             LevenshteinDistanceRecursive_label = new Label();
             RecursiveMethod_label = new Label();
             DynamicProgramming_tabPage = new TabPage();
+            ShowStepsDynamic_button = new Button();
             DynamicProgramming_button = new Button();
             OperationNumbersDymanic_textBox = new TextBox();
             OperationNumbersDymanic_label = new Label();
@@ -118,6 +120,7 @@
             // 
             // RecursiveMethod_tabPage
             // 
+            RecursiveMethod_tabPage.Controls.Add(ShowPartsRecursion_button);
             RecursiveMethod_tabPage.Controls.Add(RecursiveMethod_button);
             RecursiveMethod_tabPage.Controls.Add(OperationNumbersRecursion_textBox);
             RecursiveMethod_tabPage.Controls.Add(OperationNumbersRecursion_label);
@@ -134,6 +137,18 @@
             RecursiveMethod_tabPage.TabIndex = 0;
             RecursiveMethod_tabPage.Text = "Рекурсивный метод";
             RecursiveMethod_tabPage.UseVisualStyleBackColor = true;
+            // 
+            // ShowPartsRecursion_button
+            // 
+            ShowPartsRecursion_button.BackColor = Color.Snow;
+            ShowPartsRecursion_button.ForeColor = Color.DarkRed;
+            ShowPartsRecursion_button.Location = new Point(269, 364);
+            ShowPartsRecursion_button.Name = "ShowPartsRecursion_button";
+            ShowPartsRecursion_button.Size = new Size(192, 74);
+            ShowPartsRecursion_button.TabIndex = 16;
+            ShowPartsRecursion_button.Text = "Показать шаги по решению";
+            ShowPartsRecursion_button.UseVisualStyleBackColor = false;
+            ShowPartsRecursion_button.Click += Show_Parts;
             // 
             // RecursiveMethod_button
             // 
@@ -242,6 +257,7 @@
             // 
             // DynamicProgramming_tabPage
             // 
+            DynamicProgramming_tabPage.Controls.Add(ShowStepsDynamic_button);
             DynamicProgramming_tabPage.Controls.Add(DynamicProgramming_button);
             DynamicProgramming_tabPage.Controls.Add(OperationNumbersDymanic_textBox);
             DynamicProgramming_tabPage.Controls.Add(OperationNumbersDymanic_label);
@@ -259,6 +275,18 @@
             DynamicProgramming_tabPage.TabIndex = 1;
             DynamicProgramming_tabPage.Text = "Метод динамического программирования";
             DynamicProgramming_tabPage.UseVisualStyleBackColor = true;
+            // 
+            // ShowStepsDynamic_button
+            // 
+            ShowStepsDynamic_button.BackColor = Color.Snow;
+            ShowStepsDynamic_button.ForeColor = Color.DarkRed;
+            ShowStepsDynamic_button.Location = new Point(278, 359);
+            ShowStepsDynamic_button.Name = "ShowStepsDynamic_button";
+            ShowStepsDynamic_button.Size = new Size(192, 74);
+            ShowStepsDynamic_button.TabIndex = 24;
+            ShowStepsDynamic_button.Text = "Показать шаги по решению";
+            ShowStepsDynamic_button.UseVisualStyleBackColor = false;
+            ShowStepsDynamic_button.Click += Show_Parts;
             // 
             // DynamicProgramming_button
             // 
@@ -530,5 +558,7 @@
         private DataGridViewTextBoxColumn OperationNumbers;
         private Button CleanInput_button;
         private Button ComparisonClear_button;
+        private Button ShowPartsRecursion_button;
+        private Button ShowStepsDynamic_button;
     }
 }

@@ -216,6 +216,43 @@ namespace Lab_3
             }
 
         }
+        public void Show_Parts(object sender, EventArgs e)
+        {
+            var tmp = (Button)sender;
+            if (FirstString_textBox.Text != "" && SecondString_textBox.Text != "")
+            {
+                if (tmp.Name == "ShowPartsRecursion_button")
+                {
+                    string str_rec = "Поэтапное преобразование строк для рекурсивного метода \n";
+                    HashSet<string> parts_rec = LevenshteinDistance.GetPartsRecursion();
+
+                    // Используем enumerator для перебора элементов HashSet
+                    int i = 1;
+                    foreach (string part in parts_rec)
+                    {
+                        str_rec += $"{i}. {part} \n";
+                        i++;
+                    }
+
+                    MessageBox.Show(str_rec);
+                }
+                else
+                {
+                    string str_dyn = "Матрица расстояний для метода динамического программирования \n";
+                    int[,] parts_dyn = LevenshteinDistance.GetPartsDynamic();
+                    for (int i = 0; i < parts_dyn.GetLength(0); i++)
+                    {
+                        for (int j = 0; j < parts_dyn.GetLength(1); j++)
+                        {
+                            str_dyn += $"{Convert.ToString(parts_dyn[i, j])} ";
+                        }
+                        str_dyn += "\n";
+                    }
+                    MessageBox.Show(str_dyn);
+                }
+            }
+            
+        }
 
     }
 }
