@@ -115,7 +115,7 @@ namespace LevenshteinDistanceClassLibrary
                 result = CalculateDistanceRecursion(str1.Substring(0, str1.Length - 1), str2.Substring(0, str2.Length - 1));
                 OperationRecursionCount += 11;
             }
-            else
+            else 
             {
                 // Если символы не совпадают, берем минимум из трех вариантов
                 OperationRecursionCount += 11;
