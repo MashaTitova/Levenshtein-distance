@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MeasureClassLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0eacb249865f0e8a992fb0230cc1cac61949e8e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f413838ef2556d7ba2a99012ebae56b9971d426c")]
 [assembly: System.Reflection.AssemblyProductAttribute("MeasureClassLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MeasureClassLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

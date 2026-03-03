@@ -79,7 +79,7 @@
             FirstString_textBox.ForeColor = Color.DarkRed;
             FirstString_textBox.Location = new Point(70, 81);
             FirstString_textBox.Name = "FirstString_textBox";
-            FirstString_textBox.PlaceholderText = "Введите строку 1";
+            FirstString_textBox.PlaceholderText = "Введите строку 1. Пример: Кошка";
             FirstString_textBox.Size = new Size(608, 39);
             FirstString_textBox.TabIndex = 3;
             // 
@@ -91,7 +91,7 @@
             SecondString_textBox.ForeColor = Color.DarkRed;
             SecondString_textBox.Location = new Point(70, 158);
             SecondString_textBox.Name = "SecondString_textBox";
-            SecondString_textBox.PlaceholderText = "Введите строку 2";
+            SecondString_textBox.PlaceholderText = "Введите строку 2. Пример: Собака";
             SecondString_textBox.Size = new Size(608, 39);
             SecondString_textBox.TabIndex = 4;
             // 
